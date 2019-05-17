@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Empresa: "/>
+
+            <TextView
+                android:id="@+id/empresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome da empresa"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/line1"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cliente: "/>
+
+            <TextView
+                android:id="@+id/cliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome do cliente"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/line2"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saldo: R$ "/>
+
+            <TextView
+                android:id="@+id/saldo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="saldo atual"/>
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_movimentacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="visualizar movimentação"
+        android:layout_below="@id/line3"
+        android:layout_marginTop="50dp"/>
+</RelativeLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="5dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="1dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp">
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="numId: "/>
+
+            <TextView
+                android:id="@+id/numId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="número do id"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/line1"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="codProduto: "/>
+
+            <TextView
+                android:id="@+id/codProduto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="codigo do produto"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/line2"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="quantidade: "/>
+
+            <TextView
+                android:id="@+id/quantidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="quantidade vendida"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/line3"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="vlTotal: "/>
+
+            <TextView
+                android:id="@+id/vlTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="valor total da venda do item"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/line4"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dtOcorrencia: "/>
+
+            <TextView
+                android:id="@+id/dtOcorrencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="data da ocorrência"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/line5"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="operacaoDC: "/>
+
+            <TextView
+                android:id="@+id/operacaoDC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="operacao DC"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/line6"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="descricao: "/>
+
+            <TextView
+                android:id="@+id/descricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="descrição do produto"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/line7"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cancelado: "/>
+
+            <TextView
+                android:id="@+id/cancelado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="item foi cancelado? "/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView >
